@@ -1,6 +1,0 @@
-framework module LibSnowflake {
-  umbrella header "LibSnowflake-umbrella.h"
-
-  export *
-  module * { export * }
-}
