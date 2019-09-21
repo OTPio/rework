@@ -1,0 +1,78 @@
+PODS:
+  - Differentiator (4.0.1)
+  - Eureka (5.0.1)
+  - FLEX (3.0.0)
+  - FontAwesome.swift (1.8.2)
+  - KeychainAccess (3.2.0)
+  - LibSnowflake (1.0.0)
+  - LibToken (2.0.0):
+    - FontAwesome.swift
+  - Neon (0.4.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxCoreData (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SwiftyUserDefaults (4.0.0)
+
+DEPENDENCIES:
+  - Eureka
+  - FLEX
+  - FontAwesome.swift
+  - KeychainAccess
+  - LibSnowflake
+  - LibToken (from `~/Development/otpio-project/libtoken`)
+  - Neon
+  - RxCocoa
+  - RxCoreData
+  - RxDataSources
+  - RxSwift
+  - SwiftyUserDefaults
+
+SPEC REPOS:
+  trunk:
+    - Differentiator
+    - Eureka
+    - FLEX
+    - FontAwesome.swift
+    - KeychainAccess
+    - LibSnowflake
+    - Neon
+    - RxCocoa
+    - RxCoreData
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SwiftyUserDefaults
+
+EXTERNAL SOURCES:
+  LibToken:
+    :path: "~/Development/otpio-project/libtoken"
+
+SPEC CHECKSUMS:
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  Eureka: da9d2294da234eae40b22e7273b9fc2335502fc1
+  FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
+  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
+  LibSnowflake: 40a1201459f89cb353d7836fa1f2db0dcc0ba149
+  LibToken: 2562b62af21813076177a2022b35dfcacefda786
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxCoreData: 1ed5f83e80facccc90fc054eb7f39a44177de56a
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
+
+PODFILE CHECKSUM: 135441d1917c3bbcf6c35c31a2d663d23420403f
+
+COCOAPODS: 1.8.0.beta.2

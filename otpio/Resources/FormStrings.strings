@@ -1,0 +1,16 @@
+/* 
+  FormStrings.strings
+  otpio
+
+  Created by Mason Phillips on 9/19/19.
+  Copyright © 2019 Matrix Studios. All rights reserved.
+*/
+
+header_details = "Token Details";
+footer_details = "The details of your token. These can be customized.";
+
+header_advanced = "Advanced Details";
+footer_advanced = "These details should not be changed without direction from your provider. Doing so can invalidate your token. Modify this information at your own risk.";
+
+header_storage = "Availability";
+footer_storage = "Choose where to make your token available.";
