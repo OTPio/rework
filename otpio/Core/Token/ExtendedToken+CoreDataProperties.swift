@@ -10,6 +10,7 @@
 import Foundation
 import CoreData
 import LibToken
+import FontAwesome_swift
 
 extension ExtendedToken {
 
@@ -26,5 +27,9 @@ extension ExtendedToken {
     var associatedToken: Token? {
         get { TokenManager.shared.fetchFromKeychain(identifier: "\(self.id)") }
         set { TokenManager.shared.saveToKeychain(identifier: "\(self.id)", token: newValue!) }
+    }
+    
+    var faIcon: FontAwesome {
+        return FontAwesome(rawValue: icon ?? "dev") ?? .dev
     }
 }

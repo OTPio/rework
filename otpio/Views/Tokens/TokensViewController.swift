@@ -9,6 +9,10 @@
 import UIKit
 import FontAwesome_swift
 
+#if DEBUG
+    import FLEX
+#endif
+
 class TokensViewController: BaseController<TokensModel> {
     
     var addButton: UIBarButtonItem {
@@ -36,14 +40,33 @@ class TokensViewController: BaseController<TokensModel> {
         navigationItem.rightBarButtonItem = settingsButton
         navigationItem.title = "My Tokens"
         
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "tokenCell")
-        model.tokens.bind(to: table.rx.items(cellIdentifier: "tokenCell", cellType: UITableViewCell.self)) { _, item, cell in
-            cell.textLabel?.text = "\(item.id)"
+        table.separatorStyle = .none
+        table.register(TokenCell.self, forCellReuseIdentifier: TokenCell.identifier)
+        table.rx.setDelegate(self).disposed(by: bag)
+        model.tokens.bind(to: table.rx.items(cellIdentifier: TokenCell.identifier, cellType: TokenCell.self)) { _, item, cell in
+            cell.configure(with: item)
         }.disposed(by: bag)
         view.addSubview(table)
         table.fillSuperview()
+        
+        #if DEBUG
+        let flexTrigger = UITapGestureRecognizer(target: self, action: #selector(flexTriggerHandler))
+            flexTrigger.numberOfTouchesRequired = 2
+            flexTrigger.numberOfTapsRequired = 2
+            view.addGestureRecognizer(flexTrigger)
+        #endif
     }
-    
+}
+
+extension TokensViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return RegularTokenView.requiredHeight + 25
+//        switch ThemeManager.shared.currentCellStyle.value {
+//        case .compact : return CompactTokenView.requiredHeight + 25
+//        case .regular : return RegularTokenView.requiredHeight + 25
+//        case .expanded: return ExpandedTokenView.requiredHeight + 25
+//        }
+    }
 }
 
 extension TokensViewController {
@@ -81,4 +104,10 @@ extension TokensViewController {
             print(error)
         }
     }
+    
+    #if DEBUG
+    @objc func flexTriggerHandler() {
+        FLEXManager.shared()?.showExplorer()
+    }
+    #endif
 }

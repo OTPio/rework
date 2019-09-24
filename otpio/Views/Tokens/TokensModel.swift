@@ -19,7 +19,5 @@ class TokensModel: BaseModel {
         tokens = BehaviorRelay(value: tokenManager.fetchAll())
         
         super.init()
-        
-        tokens.subscribe(onNext: { print($0) }).disposed(by: bag)
     }
 }

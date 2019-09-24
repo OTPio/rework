@@ -46,7 +46,6 @@ class ConfirmTokenViewController: UIViewController {
         navigationItem.title = "Confirm Code"
         
         if let token = model.preparedToken.value?.associatedToken {
-            isTimeRelayActive.bind(to: token.tokenInUse).disposed(by: bag)
             token.currentPassword.drive(codeLabel.rx.text).disposed(by: bag)
             token.timeLeft.drive(timeLabel.rx.text).disposed(by: bag)
         }

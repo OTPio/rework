@@ -28,7 +28,6 @@ class TokenManager {
     }
     
     func fetchAll() -> [ExtendedToken] {
-        
         let request: NSFetchRequest<ExtendedToken> = ExtendedToken.fetchRequest()
         do {
             return try container.viewContext.fetch(request)

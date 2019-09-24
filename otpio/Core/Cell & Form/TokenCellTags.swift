@@ -8,10 +8,20 @@
 
 import Foundation
 
-typealias SectionTag = TokenTags.SectionTag
-typealias CellTag    = TokenTags.CellTag
+protocol SectionTagType {
+    var rawValue: String { get }
+    var title   : String { get }
+    var footer  : String { get }
+}
+protocol CellTagType {
+    var rawValue: String { get }
+    var title   : String { get }
+}
+
+typealias TokenSectionTag = TokenTags.SectionTag
+typealias TokenCellTag    = TokenTags.CellTag
 struct TokenTags {
-    enum SectionTag: String, CaseIterable {
+    enum SectionTag: String, CaseIterable, SectionTagType {
         case secret, details, advanced, storage
         
         var title: String {
@@ -22,7 +32,7 @@ struct TokenTags {
         }
     }
 
-    enum CellTag: String, CaseIterable {
+    enum CellTag: String, CaseIterable, CellTagType {
         case secret, textType
         case issuer, name, icon
         case advanced, digits, period, algorithm, type
@@ -34,6 +44,34 @@ struct TokenTags {
             case .inToday : return "Show in Today"
             case .advanced: return "Show Advanced Details"
             case .textType, .type: return ""
+            default: return self.rawValue.capitalized
+            }
+        }
+    }
+}
+
+typealias SettingsSectionTag = SettingsTags.SectionTag
+typealias SettingsCellTag = SettingsTags.CellTag
+struct SettingsTags {
+    enum SectionTag: String, CaseIterable, SectionTagType {
+        case settings, available, connect
+        
+        var title: String {
+            return self.rawValue.capitalized
+        }
+        var footer: String {
+            return self.rawValue.capitalized
+        }
+    }
+    
+    enum CellTag: String, CaseIterable, CellTagType {
+        case theme, cellStyle
+        case cloud
+        case about, email, reddit, support
+        
+        var title: String {
+            switch self {
+            case .cellStyle: return "Cell Style"
             default: return self.rawValue.capitalized
             }
         }

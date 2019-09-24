@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
-import RxDataSources
-import FontAwesome_swift
 import Neon
+import Eureka
 
 class SettingsViewController: BaseFormController<SettingsModel> {
     
@@ -19,5 +16,19 @@ class SettingsViewController: BaseFormController<SettingsModel> {
         super.viewDidLoad()
         
         navigationItem.title = "Settings"
+        
+        form
+            +++ Section(SettingsSectionTag.settings)
+                <<< TextRow(SettingsCellTag.cellStyle)
+                <<< TextRow(SettingsCellTag.theme)
+        
+            +++ Section(SettingsSectionTag.available)
+                <<< TextRow(SettingsCellTag.cloud)
+        
+            +++ Section(SettingsSectionTag.connect)
+                <<< TextRow(SettingsCellTag.about)
+                <<< TextRow(SettingsCellTag.reddit)
+                <<< TextRow(SettingsCellTag.email)
+                <<< TextRow(SettingsCellTag.support)
     }
 }

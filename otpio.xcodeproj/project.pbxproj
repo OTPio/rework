@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660B50E42336F17800289332 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B50E32336F17800289332 /* Theme.swift */; };
 		66610F0E23332FE600A319BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66610F0D23332FE600A319BF /* AppDelegate.swift */; };
 		66610F1323332FE600A319BF /* otpio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66610F1123332FE600A319BF /* otpio.xcdatamodeld */; };
 		66610F1723332FE700A319BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66610F1623332FE700A319BF /* Assets.xcassets */; };
@@ -18,6 +19,14 @@
 		66610F3D233339CF00A319BF /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66610F3C233339CF00A319BF /* BaseController.swift */; };
 		66610F3F233339D400A319BF /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66610F3E233339D400A319BF /* BaseModel.swift */; };
 		666A39A62336A79E0065BDE2 /* TokenExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39A52336A79E0065BDE2 /* TokenExtensions.swift */; };
+		666A39AA2336B74A0065BDE2 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39A92336B74A0065BDE2 /* ThemeManager.swift */; };
+		666A39AD2336B8D10065BDE2 /* TokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39AC2336B8D10065BDE2 /* TokenCell.swift */; };
+		666A39AF2336B9040065BDE2 /* TokenCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39AE2336B9040065BDE2 /* TokenCellModel.swift */; };
+		666A39B12336B9680065BDE2 /* TokenFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39B02336B9680065BDE2 /* TokenFooterView.swift */; };
+		666A39B42336B99B0065BDE2 /* TokenViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39B32336B99B0065BDE2 /* TokenViewType.swift */; };
+		666A39B62336C2420065BDE2 /* CompactTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39B52336C2420065BDE2 /* CompactTokenView.swift */; };
+		666A39B82336C3E30065BDE2 /* RegularTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39B72336C3E30065BDE2 /* RegularTokenView.swift */; };
+		666A39BA2336C3FA0065BDE2 /* ExpandedTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666A39B92336C3FA0065BDE2 /* ExpandedTokenView.swift */; };
 		66FAF4A423333F390092143D /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAF4A323333F390092143D /* SettingsItem.swift */; };
 		66FAF4A6233341CE0092143D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAF4A5233341CE0092143D /* SettingsModel.swift */; };
 		66FAF4AD233346A90092143D /* BaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FAF4AC233346A90092143D /* BaseTableCell.swift */; };
@@ -42,6 +51,7 @@
 		4C1ECC5A70FBCF025704BAA2 /* Pods-otpio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.debug.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.debug.xcconfig"; sourceTree = "<group>"; };
 		598A822DF1EA88823C8F92FC /* Pods_otpio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_otpio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB6BE9845390C70BEE7D23F /* Pods-otpio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.release.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.release.xcconfig"; sourceTree = "<group>"; };
+		660B50E32336F17800289332 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		66610F0A23332FE600A319BF /* otpio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otpio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66610F0D23332FE600A319BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66610F1223332FE600A319BF /* otpio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = otpio.xcdatamodel; sourceTree = "<group>"; };
@@ -55,6 +65,14 @@
 		66610F3C233339CF00A319BF /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		66610F3E233339D400A319BF /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		666A39A52336A79E0065BDE2 /* TokenExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenExtensions.swift; sourceTree = "<group>"; };
+		666A39A92336B74A0065BDE2 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		666A39AC2336B8D10065BDE2 /* TokenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCell.swift; sourceTree = "<group>"; };
+		666A39AE2336B9040065BDE2 /* TokenCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCellModel.swift; sourceTree = "<group>"; };
+		666A39B02336B9680065BDE2 /* TokenFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFooterView.swift; sourceTree = "<group>"; };
+		666A39B32336B99B0065BDE2 /* TokenViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenViewType.swift; sourceTree = "<group>"; };
+		666A39B52336C2420065BDE2 /* CompactTokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactTokenView.swift; sourceTree = "<group>"; };
+		666A39B72336C3E30065BDE2 /* RegularTokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTokenView.swift; sourceTree = "<group>"; };
+		666A39B92336C3FA0065BDE2 /* ExpandedTokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedTokenView.swift; sourceTree = "<group>"; };
 		66FAF4A323333F390092143D /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
 		66FAF4A5233341CE0092143D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		66FAF4AC233346A90092143D /* BaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableCell.swift; sourceTree = "<group>"; };
@@ -93,6 +111,16 @@
 				598A822DF1EA88823C8F92FC /* Pods_otpio.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		664885ED2339D133008FF65C /* Later */ = {
+			isa = PBXGroup;
+			children = (
+				666A39B32336B99B0065BDE2 /* TokenViewType.swift */,
+				666A39B52336C2420065BDE2 /* CompactTokenView.swift */,
+				666A39B92336C3FA0065BDE2 /* ExpandedTokenView.swift */,
+			);
+			path = Later;
 			sourceTree = "<group>";
 		};
 		66610F0123332FE600A319BF = {
@@ -185,6 +213,7 @@
 			children = (
 				66610F302333315600A319BF /* TokensViewController.swift */,
 				66FAF4B6233351CD0092143D /* TokensModel.swift */,
+				666A39AB2336B8C00065BDE2 /* TokenCell */,
 			);
 			path = Tokens;
 			sourceTree = "<group>";
@@ -234,8 +263,30 @@
 		66610F4123333A9B00A319BF /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				660B50E32336F17800289332 /* Theme.swift */,
+				666A39A92336B74A0065BDE2 /* ThemeManager.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		666A39AB2336B8C00065BDE2 /* TokenCell */ = {
+			isa = PBXGroup;
+			children = (
+				666A39AC2336B8D10065BDE2 /* TokenCell.swift */,
+				666A39B02336B9680065BDE2 /* TokenFooterView.swift */,
+				666A39AE2336B9040065BDE2 /* TokenCellModel.swift */,
+				666A39B22336B98F0065BDE2 /* TokenViews */,
+			);
+			path = TokenCell;
+			sourceTree = "<group>";
+		};
+		666A39B22336B98F0065BDE2 /* TokenViews */ = {
+			isa = PBXGroup;
+			children = (
+				666A39B72336C3E30065BDE2 /* RegularTokenView.swift */,
+				664885ED2339D133008FF65C /* Later */,
+			);
+			path = TokenViews;
 			sourceTree = "<group>";
 		};
 		9D6C5EC6D078CD7C16A16AE6 /* Pods */ = {
@@ -368,13 +419,19 @@
 			files = (
 				66FAF4A6233341CE0092143D /* SettingsModel.swift in Sources */,
 				66610F2F2333314100A319BF /* AddViewController.swift in Sources */,
+				666A39B42336B99B0065BDE2 /* TokenViewType.swift in Sources */,
 				666A39A62336A79E0065BDE2 /* TokenExtensions.swift in Sources */,
+				666A39B12336B9680065BDE2 /* TokenFooterView.swift in Sources */,
 				66610F3D233339CF00A319BF /* BaseController.swift in Sources */,
 				66FAF4BB233353B60092143D /* AddModel.swift in Sources */,
 				66FAF4EE233477370092143D /* ExtendedToken+CoreDataProperties.swift in Sources */,
 				66610F3A2333380A00A319BF /* TokenCellStyle.swift in Sources */,
 				66FAF4A423333F390092143D /* SettingsItem.swift in Sources */,
 				66610F0E23332FE600A319BF /* AppDelegate.swift in Sources */,
+				666A39B82336C3E30065BDE2 /* RegularTokenView.swift in Sources */,
+				666A39AF2336B9040065BDE2 /* TokenCellModel.swift in Sources */,
+				666A39AD2336B8D10065BDE2 /* TokenCell.swift in Sources */,
+				666A39BA2336C3FA0065BDE2 /* ExpandedTokenView.swift in Sources */,
 				66610F3F233339D400A319BF /* BaseModel.swift in Sources */,
 				66FAF4AD233346A90092143D /* BaseTableCell.swift in Sources */,
 				66FAF4BD233354400092143D /* ConfirmTokenViewController.swift in Sources */,
@@ -382,11 +439,14 @@
 				66FAF4E423345B090092143D /* OTPio+Eureka.swift in Sources */,
 				66FAF4ED233477370092143D /* ExtendedToken+CoreDataClass.swift in Sources */,
 				66FAF4B9233353990092143D /* ScanQRCodeViewController.swift in Sources */,
+				666A39B62336C2420065BDE2 /* CompactTokenView.swift in Sources */,
 				66610F1323332FE600A319BF /* otpio.xcdatamodeld in Sources */,
 				66610F2D2333312F00A319BF /* SettingsViewController.swift in Sources */,
 				66FAF4F0233498240092143D /* TokenManager.swift in Sources */,
 				66FAF4E223345B000092143D /* TokenCellTags.swift in Sources */,
+				660B50E42336F17800289332 /* Theme.swift in Sources */,
 				66FAF4B7233351CD0092143D /* TokensModel.swift in Sources */,
+				666A39AA2336B74A0065BDE2 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

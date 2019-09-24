@@ -13,16 +13,16 @@ import RxCocoa
 import LibToken
 
 extension Form {
-    func sectionBy(tag: SectionTag) -> Section? {
+    func sectionBy(tag: SectionTagType) -> Section? {
         return self.sectionBy(tag: tag.rawValue)
     }
-    func rowBy(tag: CellTag) -> BaseRow? {
+    func rowBy(tag: CellTagType) -> BaseRow? {
         return self.rowBy(tag: tag.rawValue)
     }
 }
 
 extension Section {
-    convenience init(_ tag: SectionTag) {
+    convenience init(_ tag: SectionTagType) {
         self.init(header: tag.title, footer: tag.footer)
     }
 }
@@ -45,14 +45,14 @@ extension Reactive where Base: TextRow {
 }
 
 extension TextRow {
-    var cellTag: CellTag? {
-        return CellTag(rawValue: self.tag ?? "")
+    var cellTag: CellTagType? {
+        return TokenCellTag(rawValue: self.tag ?? "")
     }
-    convenience init(_ tag: CellTag) {
+    convenience init(_ tag: CellTagType) {
         self.init(tag: tag.rawValue)
         self.title = tag.title
     }
-    convenience init(_ tag: CellTag, initializer: (TextRow) -> Void) {
+    convenience init(_ tag: CellTagType, initializer: (TextRow) -> Void) {
         self.init(tag.rawValue, initializer)
         self.title = tag.title
     }
@@ -75,14 +75,14 @@ extension Reactive where Base: SwitchRow {
 }
 
 extension SwitchRow {
-    var cellTag: CellTag? {
-        return CellTag(rawValue: self.tag ?? "")
+    var cellTag: TokenCellTag? {
+        return TokenCellTag(rawValue: self.tag ?? "")
     }
-    convenience init(_ tag: CellTag) {
+    convenience init(_ tag: CellTagType) {
         self.init(tag: tag.rawValue)
         self.title = tag.title
     }
-    convenience init(_ tag: CellTag, initializer: (SwitchRow) -> Void) {
+    convenience init(_ tag: CellTagType, initializer: (SwitchRow) -> Void) {
         self.init(tag.rawValue, initializer)
         self.title = tag.title
     }
@@ -106,14 +106,14 @@ extension Reactive where Base: StepperRow {
 }
 
 extension StepperRow {
-    var cellTag: CellTag? {
-        return CellTag(rawValue: self.tag ?? "")
+    var cellTag: TokenCellTag? {
+        return TokenCellTag(rawValue: self.tag ?? "")
     }
-    convenience init(_ tag: CellTag) {
+    convenience init(_ tag: CellTagType) {
         self.init(tag: tag.rawValue)
         self.title = tag.title
     }
-    convenience init(_ tag: CellTag, initializer: (StepperRow) -> Void) {
+    convenience init(_ tag: CellTagType, initializer: (StepperRow) -> Void) {
         self.init(tag.rawValue, initializer)
         self.title = tag.title
     }
@@ -136,14 +136,14 @@ extension Reactive where Base: ActionSheetRow<TokenAlgorithm> {
 }
 
 extension ActionSheetRow {
-    var cellTag: CellTag? {
-        return CellTag(rawValue: self.tag ?? "")
+    var cellTag: TokenCellTag? {
+        return TokenCellTag(rawValue: self.tag ?? "")
     }
-    convenience init(_ tag: CellTag) {
+    convenience init(_ tag: CellTagType) {
         self.init(tag: tag.rawValue)
         self.title = tag.title
     }
-    convenience init(_ tag: CellTag, initializer: (ActionSheetRow<T>) -> Void) {
+    convenience init(_ tag: CellTagType, initializer: (ActionSheetRow<T>) -> Void) {
         self.init(tag.rawValue, initializer)
         self.title = tag.title
     }
@@ -166,14 +166,14 @@ extension Reactive where Base: SegmentedRow<String> {
 }
 
 extension SegmentedRow {
-    var cellTag: CellTag? {
-        return CellTag(rawValue: self.tag ?? "")
+    var cellTag: TokenCellTag? {
+        return TokenCellTag(rawValue: self.tag ?? "")
     }
-    convenience init(_ tag: CellTag) {
+    convenience init(_ tag: CellTagType) {
         self.init(tag: tag.rawValue)
         self.title = tag.title
     }
-    convenience init(_ tag: CellTag, initializer: (SegmentedRow<T>) -> Void) {
+    convenience init(_ tag: CellTagType, initializer: (SegmentedRow<T>) -> Void) {
         self.init(tag.rawValue, initializer)
         self.title = tag.title
     }
