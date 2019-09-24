@@ -14,9 +14,9 @@ import FontAwesome_swift
 class ConfirmTokenViewController: UIViewController {
     var model: AddModel!
     
-    let descriptionLabel = UILabel()
-    let codeLabel = UILabel()
-    let timeLabel = UILabel()
+    let descriptionLabel = BaseLabel()
+    let codeLabel = BaseLabel()
+    let timeLabel = BaseLabel()
     
     let bag = DisposeBag()
     

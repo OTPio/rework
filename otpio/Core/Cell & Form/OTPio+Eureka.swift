@@ -119,36 +119,6 @@ extension StepperRow {
     }
 }
 
-extension ActionSheetRow: ReactiveCompatible {}
-extension Reactive where Base: ActionSheetRow<TokenAlgorithm> {
-    var setValue: Binder<TokenAlgorithm?> {
-        return Binder<TokenAlgorithm?>(base) { t, v in
-            t.value = v
-            t.updateCell()
-        }
-    }
-    var getValue: Driver<TokenAlgorithm?> {
-        return Observable<TokenAlgorithm?>.create { [base] observer -> Disposable in
-            base.onChange { observer.onNext($0.value) }
-            return Disposables.create()
-        }.asDriver(onErrorJustReturn: nil)
-    }
-}
-
-extension ActionSheetRow {
-    var cellTag: TokenCellTag? {
-        return TokenCellTag(rawValue: self.tag ?? "")
-    }
-    convenience init(_ tag: CellTagType) {
-        self.init(tag: tag.rawValue)
-        self.title = tag.title
-    }
-    convenience init(_ tag: CellTagType, initializer: (ActionSheetRow<T>) -> Void) {
-        self.init(tag.rawValue, initializer)
-        self.title = tag.title
-    }
-}
-
 extension SegmentedRow: ReactiveCompatible {}
 extension Reactive where Base: SegmentedRow<String> {
     var setValue: Binder<String?> {
@@ -174,6 +144,50 @@ extension SegmentedRow {
         self.title = tag.title
     }
     convenience init(_ tag: CellTagType, initializer: (SegmentedRow<T>) -> Void) {
+        self.init(tag.rawValue, initializer)
+        self.title = tag.title
+    }
+}
+
+extension ActionSheetRow: ReactiveCompatible {}
+extension Reactive where Base: ActionSheetRow<TokenAlgorithm> {
+    var setValue: Binder<TokenAlgorithm?> {
+        return Binder<TokenAlgorithm?>(base) { t, v in
+            t.value = v
+            t.updateCell()
+        }
+    }
+    var getValue: Driver<TokenAlgorithm?> {
+        return Observable<TokenAlgorithm?>.create { [base] observer -> Disposable in
+            base.onChange { observer.onNext($0.value) }
+            return Disposables.create()
+        }.asDriver(onErrorJustReturn: nil)
+    }
+}
+extension Reactive where Base: ActionSheetRow<TokenCellStyle> {
+    var setValue: Binder<TokenCellStyle?> {
+        return Binder<TokenCellStyle?>(base) { t, v in
+            t.value = v
+            t.updateCell()
+        }
+    }
+    var getValue: Driver<TokenCellStyle?> {
+        return Observable<TokenCellStyle?>.create { [base] observer -> Disposable in
+            base.onChange { observer.onNext($0.value) }
+            return Disposables.create()
+        }.asDriver(onErrorJustReturn: nil)
+    }
+}
+
+extension ActionSheetRow {
+    var cellTag: TokenCellTag? {
+        return TokenCellTag(rawValue: self.tag ?? "")
+    }
+    convenience init(_ tag: CellTagType) {
+        self.init(tag: tag.rawValue)
+        self.title = tag.title
+    }
+    convenience init(_ tag: CellTagType, initializer: (ActionSheetRow<T>) -> Void) {
         self.init(tag.rawValue, initializer)
         self.title = tag.title
     }

@@ -19,6 +19,7 @@ class TokensViewController: BaseController<TokensModel> {
         let b = FontAwesomeBarButtonItem(title: .fontAwesomeIcon(name: .plus), style: .plain, target: self, action: #selector(showAdd))
         b.setTitleTextAttributes([.font: UIFont.fontAwesome(ofSize: 20, style: .regular)], for: .normal)
         b.setTitleTextAttributes([.font: UIFont.fontAwesome(ofSize: 20, style: .regular)], for: .highlighted)
+        b.tintColor = UIColor(0x6c71c4ff)
         return b
     }
     var settingsButton: UIBarButtonItem {
@@ -41,6 +42,7 @@ class TokensViewController: BaseController<TokensModel> {
         navigationItem.title = "My Tokens"
         
         table.separatorStyle = .none
+        table.backgroundColor = .clear
         table.register(TokenCell.self, forCellReuseIdentifier: TokenCell.identifier)
         table.rx.setDelegate(self).disposed(by: bag)
         model.tokens.bind(to: table.rx.items(cellIdentifier: TokenCell.identifier, cellType: TokenCell.self)) { _, item, cell in
@@ -60,7 +62,7 @@ class TokensViewController: BaseController<TokensModel> {
 
 extension TokensViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return RegularTokenView.requiredHeight + 25
+        return RegularTokenView.requiredHeight + 35
 //        switch ThemeManager.shared.currentCellStyle.value {
 //        case .compact : return CompactTokenView.requiredHeight + 25
 //        case .regular : return RegularTokenView.requiredHeight + 25

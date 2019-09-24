@@ -26,6 +26,34 @@ class BaseController<T: BaseModel>: UIViewController {
         model.errorRelay.subscribe(onNext: handle).disposed(by: bag)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ThemeManager.shared.currentTheme.subscribe(onNext: handleUpdate).disposed(by: bag)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handleUpdate(theme: ThemeManager.shared.currentTheme.value)
+    }
+    
+    func handleUpdate(theme: Theme) {
+        UIView.animate(withDuration: 0.2) {
+            self.view.backgroundColor = theme.theme.secondaryBackground
+            
+            if let left = self.navigationItem.leftBarButtonItem {
+                left.tintColor = theme.theme.navbarBarButtonColor
+                self.navigationItem.leftBarButtonItem = left
+            }
+            if let right = self.navigationItem.rightBarButtonItem {
+                right.tintColor = theme.theme.navbarBarButtonColor
+                self.navigationItem.rightBarButtonItem = right
+            }
+            
+            self.navigationController?.navigationBar.barTintColor = theme.theme.navbarBackground
+            self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: theme.theme.navbarTitleColor]
+        }
+    }
+    
     func handle(error: Error?) {
         let alert = UIAlertController(title: "Error",
                                       message: "An error occured\n\(error?.localizedDescription ?? "")",
@@ -59,6 +87,35 @@ class BaseFormController<T: BaseModel>: FormViewController {
         model.errorRelay.subscribe(onNext: handle).disposed(by: bag)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ThemeManager.shared.currentTheme.subscribe(onNext: handleUpdate).disposed(by: bag)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handleUpdate(theme: ThemeManager.shared.currentTheme.value)
+    }
+    
+    func handleUpdate(theme: Theme) {
+        UIView.animate(withDuration: 0.2) {
+            self.view.backgroundColor = theme.theme.secondaryBackground
+            self.tableView.backgroundColor = theme.theme.secondaryBackground
+            
+            if let left = self.navigationItem.leftBarButtonItem {
+                left.tintColor = theme.theme.navbarBarButtonColor
+                self.navigationItem.leftBarButtonItem = left
+            }
+            if let right = self.navigationItem.rightBarButtonItem {
+                right.tintColor = theme.theme.navbarBarButtonColor
+                self.navigationItem.rightBarButtonItem = right
+            }
+            
+            self.navigationController?.navigationBar.barTintColor = theme.theme.navbarBackground
+            self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: theme.theme.navbarTitleColor]
+        }
+    }
+
     func handle(error: Error?) {
         let alert = UIAlertController(title: "Error",
                                       message: "An error occured\n\(error?.localizedDescription ?? "")",

@@ -19,11 +19,16 @@ class SettingsViewController: BaseFormController<SettingsModel> {
         
         form
             +++ Section(SettingsSectionTag.settings)
-                <<< TextRow(SettingsCellTag.cellStyle)
-                <<< TextRow(SettingsCellTag.theme)
+                <<< CellStylePushRow()
+                <<< ActionSheetRow<Theme>(SettingsCellTag.theme) { row in
+                    row.value = .default
+                    row.options = Theme.allCases
+                }.onChange({ row in
+                    ThemeManager.shared.currentTheme.accept(row.value!)
+                })
         
             +++ Section(SettingsSectionTag.available)
-                <<< TextRow(SettingsCellTag.cloud)
+                <<< SwitchRow(SettingsCellTag.cloud) { $0.value = true }
         
             +++ Section(SettingsSectionTag.connect)
                 <<< TextRow(SettingsCellTag.about)

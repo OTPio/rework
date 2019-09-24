@@ -33,6 +33,9 @@ class TokenCell: BaseTableCell<ExtendedToken, TokenCellModel> {
         tokenFooterView.bind(using: model)
         contentView.addSubview(tokenFooterView)
         
+        backgroundColor = .clear
+        contentView.backgroundColor = .clear
+        
 //        tokenDisplayView.addSubview(tokenViews[currentStyle]!)
         
         
@@ -56,7 +59,7 @@ class TokenCell: BaseTableCell<ExtendedToken, TokenCellModel> {
         
         contentView.fillSuperview(left: 15, right: 15, top: 10, bottom: 10)
         
-        tokenFooterView.anchorAndFillEdge(.bottom, xPad: 0, yPad: 0, otherSize: 25)
+        tokenFooterView.anchorAndFillEdge(.bottom, xPad: 0, yPad: 0, otherSize: 35)
         tokenDisplayView.alignAndFillHeight(align: .aboveCentered, relativeTo: tokenFooterView, padding: 5, width: contentView.width)
         
         tokenDisplayView.subviews.first?.fillSuperview()

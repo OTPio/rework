@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		660B50E42336F17800289332 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660B50E32336F17800289332 /* Theme.swift */; };
+		664885F22339DD64008FF65C /* CellStylePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664885F12339DD64008FF65C /* CellStylePushViewController.swift */; };
+		664885F42339DE71008FF65C /* CellStylePushRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664885F32339DE71008FF65C /* CellStylePushRow.swift */; };
+		664885F72339E6AC008FF65C /* NightLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664885F62339E6AC008FF65C /* NightLight.swift */; };
+		664885F92339E73E008FF65C /* Solarized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664885F82339E73E008FF65C /* Solarized.swift */; };
+		664885FB2339F432008FF65C /* BaseUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664885FA2339F432008FF65C /* BaseUIKit.swift */; };
+		664885FD2339FE46008FF65C /* InTheWind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664885FC2339FE46008FF65C /* InTheWind.swift */; };
 		66610F0E23332FE600A319BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66610F0D23332FE600A319BF /* AppDelegate.swift */; };
 		66610F1323332FE600A319BF /* otpio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66610F1123332FE600A319BF /* otpio.xcdatamodeld */; };
 		66610F1723332FE700A319BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66610F1623332FE700A319BF /* Assets.xcassets */; };
@@ -52,6 +58,12 @@
 		598A822DF1EA88823C8F92FC /* Pods_otpio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_otpio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB6BE9845390C70BEE7D23F /* Pods-otpio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.release.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.release.xcconfig"; sourceTree = "<group>"; };
 		660B50E32336F17800289332 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		664885F12339DD64008FF65C /* CellStylePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStylePushViewController.swift; sourceTree = "<group>"; };
+		664885F32339DE71008FF65C /* CellStylePushRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStylePushRow.swift; sourceTree = "<group>"; };
+		664885F62339E6AC008FF65C /* NightLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightLight.swift; sourceTree = "<group>"; };
+		664885F82339E73E008FF65C /* Solarized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solarized.swift; sourceTree = "<group>"; };
+		664885FA2339F432008FF65C /* BaseUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIKit.swift; sourceTree = "<group>"; };
+		664885FC2339FE46008FF65C /* InTheWind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTheWind.swift; sourceTree = "<group>"; };
 		66610F0A23332FE600A319BF /* otpio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otpio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66610F0D23332FE600A319BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66610F1223332FE600A319BF /* otpio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = otpio.xcdatamodel; sourceTree = "<group>"; };
@@ -123,6 +135,41 @@
 			path = Later;
 			sourceTree = "<group>";
 		};
+		664885EE2339DBAF008FF65C /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				664885EF2339DD1E008FF65C /* Theme */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		664885EF2339DD1E008FF65C /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				664885F02339DD29008FF65C /* CellStyle */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		664885F02339DD29008FF65C /* CellStyle */ = {
+			isa = PBXGroup;
+			children = (
+				664885F12339DD64008FF65C /* CellStylePushViewController.swift */,
+				664885F32339DE71008FF65C /* CellStylePushRow.swift */,
+			);
+			path = CellStyle;
+			sourceTree = "<group>";
+		};
+		664885F52339E6A4008FF65C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				664885F62339E6AC008FF65C /* NightLight.swift */,
+				664885F82339E73E008FF65C /* Solarized.swift */,
+				664885FC2339FE46008FF65C /* InTheWind.swift */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
 		66610F0123332FE600A319BF = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +237,9 @@
 		66610F27233330BA00A319BF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				66FAF4A323333F390092143D /* SettingsItem.swift */,
+				664885EE2339DBAF008FF65C /* Custom Cells */,
 				66610F2C2333312F00A319BF /* SettingsViewController.swift */,
+				66FAF4A323333F390092143D /* SettingsItem.swift */,
 				66FAF4A5233341CE0092143D /* SettingsModel.swift */,
 			);
 			path = Settings;
@@ -245,6 +293,7 @@
 				66610F3C233339CF00A319BF /* BaseController.swift */,
 				66FAF4AC233346A90092143D /* BaseTableCell.swift */,
 				66610F3E233339D400A319BF /* BaseModel.swift */,
+				664885FA2339F432008FF65C /* BaseUIKit.swift */,
 			);
 			path = Bootstrap;
 			sourceTree = "<group>";
@@ -263,6 +312,7 @@
 		66610F4123333A9B00A319BF /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				664885F52339E6A4008FF65C /* Themes */,
 				660B50E32336F17800289332 /* Theme.swift */,
 				666A39A92336B74A0065BDE2 /* ThemeManager.swift */,
 			);
@@ -420,10 +470,12 @@
 				66FAF4A6233341CE0092143D /* SettingsModel.swift in Sources */,
 				66610F2F2333314100A319BF /* AddViewController.swift in Sources */,
 				666A39B42336B99B0065BDE2 /* TokenViewType.swift in Sources */,
+				664885F92339E73E008FF65C /* Solarized.swift in Sources */,
 				666A39A62336A79E0065BDE2 /* TokenExtensions.swift in Sources */,
 				666A39B12336B9680065BDE2 /* TokenFooterView.swift in Sources */,
 				66610F3D233339CF00A319BF /* BaseController.swift in Sources */,
 				66FAF4BB233353B60092143D /* AddModel.swift in Sources */,
+				664885FD2339FE46008FF65C /* InTheWind.swift in Sources */,
 				66FAF4EE233477370092143D /* ExtendedToken+CoreDataProperties.swift in Sources */,
 				66610F3A2333380A00A319BF /* TokenCellStyle.swift in Sources */,
 				66FAF4A423333F390092143D /* SettingsItem.swift in Sources */,
@@ -434,6 +486,8 @@
 				666A39BA2336C3FA0065BDE2 /* ExpandedTokenView.swift in Sources */,
 				66610F3F233339D400A319BF /* BaseModel.swift in Sources */,
 				66FAF4AD233346A90092143D /* BaseTableCell.swift in Sources */,
+				664885F72339E6AC008FF65C /* NightLight.swift in Sources */,
+				664885FB2339F432008FF65C /* BaseUIKit.swift in Sources */,
 				66FAF4BD233354400092143D /* ConfirmTokenViewController.swift in Sources */,
 				66610F312333315600A319BF /* TokensViewController.swift in Sources */,
 				66FAF4E423345B090092143D /* OTPio+Eureka.swift in Sources */,
@@ -442,6 +496,8 @@
 				666A39B62336C2420065BDE2 /* CompactTokenView.swift in Sources */,
 				66610F1323332FE600A319BF /* otpio.xcdatamodeld in Sources */,
 				66610F2D2333312F00A319BF /* SettingsViewController.swift in Sources */,
+				664885F22339DD64008FF65C /* CellStylePushViewController.swift in Sources */,
+				664885F42339DE71008FF65C /* CellStylePushRow.swift in Sources */,
 				66FAF4F0233498240092143D /* TokenManager.swift in Sources */,
 				66FAF4E223345B000092143D /* TokenCellTags.swift in Sources */,
 				660B50E42336F17800289332 /* Theme.swift in Sources */,

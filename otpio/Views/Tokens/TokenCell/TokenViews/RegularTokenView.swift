@@ -20,31 +20,27 @@ class RegularTokenView: UIView {
         }
     }
     
-    let label : UILabel = UILabel()
-    let issuer: UILabel = UILabel()
-    let time  : UILabel = UILabel()
-    let code  : UILabel = UILabel()
+    let label : BaseLabel = BaseLabel()
+    let issuer: BaseLabel = BaseLabel(isPrimary: false)
+    let time  : BaseLabel = BaseLabel(isPrimary: false, align: .right)
+    let code  : BaseLabel = BaseLabel(align: .right)
 
     let bag = DisposeBag()
     
     init() {
         super.init(frame: .zero)
         
-        backgroundColor = .systemBlue
-        
-        label.textColor = .white
         addSubview(label)
-        
-        issuer.textColor = .white
         addSubview(issuer)
         
         time.textAlignment = .right
-        time.textColor = .white
         addSubview(time)
         
         code.textAlignment = .right
-        code.textColor = .white
         addSubview(code)
+        
+        ThemeManager.shared.currentTheme.map { $0.theme.primaryBackground }
+        .bind(to: rx.backgroundColor).disposed(by: bag)
     }
     
     func bind(using model: TokenCellModel) {

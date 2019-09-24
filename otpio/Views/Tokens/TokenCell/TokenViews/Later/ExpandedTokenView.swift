@@ -16,10 +16,10 @@ class ExpandedTokenView: UIView, TokenViewType {
     
     let model: TokenCellModel
     
-    let label : UILabel = UILabel()
-    let issuer: UILabel = UILabel()
-    let time  : UILabel = UILabel()
-    let code  : UILabel = UILabel()
+    let label : BaseLabel = BaseLabel()
+    let issuer: BaseLabel = BaseLabel()
+    let time  : BaseLabel = BaseLabel()
+    let code  : BaseLabel = BaseLabel()
 
     let bag = DisposeBag()
     

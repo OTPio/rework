@@ -21,5 +21,12 @@ class ThemeManager {
     init() {
         currentCellStyle = BehaviorRelay(value: TokenCellStyle.default)
         currentTheme = BehaviorRelay(value: Theme.default)
+        
+        currentTheme.subscribe(onNext: handleGlobalUpdate).disposed(by: bag)
+    }
+    
+    private func handleGlobalUpdate(theme: Theme) {
+        UINavigationBar.appearance().barTintColor = theme.theme.navbarBackground
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: theme.theme.navbarTitleColor]
     }
 }

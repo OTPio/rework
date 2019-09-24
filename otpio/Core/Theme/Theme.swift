@@ -14,15 +14,20 @@ extension DefaultsKeys {
 }
 
 protocol ThemeType {
-    static var primaryLabel       : UIColor { get }
-    static var secondaryLabel     : UIColor { get }
+    var primaryLabel        : UIColor { get } // Primary label color
+    var secondaryLabel      : UIColor { get } // Secondary label color
+    var iconColor           : UIColor { get } // The color of icons
     
-    static var primaryBackground  : UIColor { get }
-    static var secondaryBackground: UIColor { get }
-    static var navbarBackground   : UIColor { get }
+    var primaryBackground   : UIColor { get } // The color of the main token display
+    var secondaryBackground : UIColor { get } // The color of the view controller background
+    var tertiaryBackground  : UIColor { get } // The color of the token footer view
+    var iconBackground      : UIColor { get } // The color of the background for icons
     
-    static var tableCellBackground: UIColor { get }
-    static var progressTrack      : UIColor { get }
+    var navbarBackground    : UIColor { get } // The color of the navbar
+    var navbarTitleColor    : UIColor { get } // The color of the navbar title
+    var navbarBarButtonColor: UIColor { get } // The color of the navbar buttons
+    
+//    static var progressTrack      : UIColor { get }
 }
 
 enum Theme: Int, CustomStringConvertible, DefaultsSerializable, CaseIterable {
@@ -32,6 +37,7 @@ enum Theme: Int, CustomStringConvertible, DefaultsSerializable, CaseIterable {
     }
     case nightLightBright, nightLightDark
     case solarizedLight, solarizedDark
+    case inTheWindLight, inTheWindDark
     
     var description: String {
         switch self {
@@ -39,6 +45,8 @@ enum Theme: Int, CustomStringConvertible, DefaultsSerializable, CaseIterable {
         case .nightLightBright: return "Night/Light Bright"
         case .solarizedDark   : return "Solarized Dark"
         case .solarizedLight  : return "Solarized Light"
+        case .inTheWindDark   : return "In The Wind Dark"
+        case .inTheWindLight  : return "In The Wind Light"
         }
     }
     
@@ -48,6 +56,8 @@ enum Theme: Int, CustomStringConvertible, DefaultsSerializable, CaseIterable {
         case .nightLightBright: return NightLightBright()
         case .solarizedDark   : return SolarizedDark()
         case .solarizedLight  : return SolarizedLight()
+        case .inTheWindDark   : return InTheWindDark()
+        case .inTheWindLight  : return InTheWindLight()
         }
     }
 }
@@ -61,42 +71,4 @@ internal extension UIColor {
 
     self.init(red: red, green: green, blue: blue, alpha: alpha)
   }
-}
-
-struct NightLightDark: ThemeType {
-    static var primaryLabel       : UIColor = UIColor(0x002b36ff)
-    static var secondaryLabel     : UIColor = UIColor(0x002b36ff)
-    static var primaryBackground  : UIColor = UIColor(0x002b36ff)
-    static var secondaryBackground: UIColor = UIColor(0x002b36ff)
-    static var navbarBackground   : UIColor = .yellow
-    static var tableCellBackground: UIColor = .yellow
-    static var progressTrack      : UIColor = UIColor(0x002b36ff)
-}
-struct NightLightBright: ThemeType {
-    static var primaryLabel       : UIColor = UIColor(0x002b36ff)
-    static var secondaryLabel     : UIColor = UIColor(0x002b36ff)
-    static var primaryBackground  : UIColor = UIColor(0x002b36ff)
-    static var secondaryBackground: UIColor = UIColor(0x002b36ff)
-    static var navbarBackground   : UIColor = .yellow
-    static var tableCellBackground: UIColor = .yellow
-    static var progressTrack      : UIColor = UIColor(0x002b36ff)
-}
-
-struct SolarizedDark: ThemeType {
-    static var primaryLabel       : UIColor = UIColor(0x839496ff)
-    static var secondaryLabel     : UIColor = UIColor(0x586e75ff)
-    static var primaryBackground  : UIColor = UIColor(0x002b36ff)
-    static var secondaryBackground: UIColor = UIColor(0x073642ff)
-    static var navbarBackground   : UIColor = .yellow
-    static var tableCellBackground: UIColor = .yellow
-    static var progressTrack      : UIColor = UIColor(0x268bd2ff)
-}
-struct SolarizedLight: ThemeType {
-    static var primaryLabel       : UIColor = UIColor(0x657b83ff)
-    static var secondaryLabel     : UIColor = UIColor(0x93a1a1ff)
-    static var primaryBackground  : UIColor = UIColor(0xfdf6e3ff)
-    static var secondaryBackground: UIColor = UIColor(0xeee8d5ff)
-    static var navbarBackground   : UIColor = .yellow
-    static var tableCellBackground: UIColor = .yellow
-    static var progressTrack      : UIColor = UIColor(0xb58900ff)
 }
