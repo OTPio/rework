@@ -25,6 +25,9 @@
 		66965C8723558FB000267BC1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8623558FB000267BC1 /* SettingsViewController.swift */; };
 		66965C8923558FB900267BC1 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8823558FB900267BC1 /* SettingsModel.swift */; };
 		66965C8B2355917400267BC1 /* ThemeMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8A2355917400267BC1 /* ThemeMenuController.swift */; };
+		66965C8E2355941F00267BC1 /* InTheWind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8D2355941F00267BC1 /* InTheWind.swift */; };
+		66965C912355943F00267BC1 /* Solarized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8F2355943F00267BC1 /* Solarized.swift */; };
+		66965C922355943F00267BC1 /* NightLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C902355943F00267BC1 /* NightLight.swift */; };
 		CF2974C6DA468D95593B4604 /* Pods_otpio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41862767F78C1A30F7490F18 /* Pods_otpio.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		66965C8623558FB000267BC1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		66965C8823558FB900267BC1 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		66965C8A2355917400267BC1 /* ThemeMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeMenuController.swift; sourceTree = "<group>"; };
+		66965C8D2355941F00267BC1 /* InTheWind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InTheWind.swift; sourceTree = "<group>"; };
+		66965C8F2355943F00267BC1 /* Solarized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solarized.swift; sourceTree = "<group>"; };
+		66965C902355943F00267BC1 /* NightLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightLight.swift; sourceTree = "<group>"; };
 		6CED8FC0524D1DB7F77A83A1 /* Pods-otpio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.release.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.release.xcconfig"; sourceTree = "<group>"; };
 		981E7A384F8F87AB6584F656 /* Pods-otpio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.debug.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +161,7 @@
 		66965C6F23558CDC00267BC1 /* Theming */ = {
 			isa = PBXGroup;
 			children = (
+				66965C8C235593E700267BC1 /* Themes */,
 				66965C7023558CE200267BC1 /* ThemeManager.swift */,
 				66965C7923558DF700267BC1 /* Theme.swift */,
 			);
@@ -196,6 +203,16 @@
 				66965C8023558F6100267BC1 /* HomeModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		66965C8C235593E700267BC1 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				66965C902355943F00267BC1 /* NightLight.swift */,
+				66965C8F2355943F00267BC1 /* Solarized.swift */,
+				66965C8D2355941F00267BC1 /* InTheWind.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 		A162F6B9C066C7F06CDE1E5E /* Pods */ = {
@@ -338,12 +355,15 @@
 				66965C6923558C9D00267BC1 /* Router.swift in Sources */,
 				66965C8923558FB900267BC1 /* SettingsModel.swift in Sources */,
 				66965C6B23558CA200267BC1 /* Option.swift in Sources */,
+				66965C922355943F00267BC1 /* NightLight.swift in Sources */,
 				66965C7123558CE200267BC1 /* ThemeManager.swift in Sources */,
 				66965C7F23558F5C00267BC1 /* HomeViewController.swift in Sources */,
 				66965C8723558FB000267BC1 /* SettingsViewController.swift in Sources */,
 				66965C6E23558CD800267BC1 /* BaseController.swift in Sources */,
+				66965C912355943F00267BC1 /* Solarized.swift in Sources */,
 				66965C7423558D6A00267BC1 /* MenuController.swift in Sources */,
 				66965C7823558D9F00267BC1 /* BaseModel.swift in Sources */,
+				66965C8E2355941F00267BC1 /* InTheWind.swift in Sources */,
 				66965C5023558BB200267BC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
