@@ -1,0 +1,53 @@
+PODS:
+  - Eureka (5.1.0)
+  - FontAwesome.swift (1.8.2)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
+  - Neon (0.4.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+
+DEPENDENCIES:
+  - Eureka
+  - FontAwesome.swift
+  - MMDrawerController
+  - Neon
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Eureka
+    - FontAwesome.swift
+    - MMDrawerController
+    - Neon
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+
+PODFILE CHECKSUM: 33628f37605e4bff6f5d66caa2dca4cf9d418f37
+
+COCOAPODS: 1.8.3

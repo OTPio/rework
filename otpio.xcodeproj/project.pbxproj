@@ -3,27 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		66965C5023558BB200267BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C4F23558BB200267BC1 /* AppDelegate.swift */; };
-		66965C5223558BB200267BC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C5123558BB200267BC1 /* SceneDelegate.swift */; };
-		66965C5423558BB200267BC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C5323558BB200267BC1 /* ContentView.swift */; };
 		66965C5623558BB300267BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66965C5523558BB300267BC1 /* Assets.xcassets */; };
-		66965C5923558BB300267BC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66965C5823558BB300267BC1 /* Preview Assets.xcassets */; };
 		66965C5C23558BB300267BC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66965C5A23558BB300267BC1 /* LaunchScreen.storyboard */; };
+		66965C6923558C9D00267BC1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C6823558C9D00267BC1 /* Router.swift */; };
+		66965C6B23558CA200267BC1 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C6A23558CA200267BC1 /* Option.swift */; };
+		66965C6E23558CD800267BC1 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C6D23558CD800267BC1 /* BaseController.swift */; };
+		66965C7123558CE200267BC1 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C7023558CE200267BC1 /* ThemeManager.swift */; };
+		66965C7423558D6A00267BC1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C7323558D6A00267BC1 /* MenuController.swift */; };
+		66965C7623558D7F00267BC1 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C7523558D7F00267BC1 /* MenuCell.swift */; };
+		66965C7823558D9F00267BC1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C7723558D9F00267BC1 /* BaseModel.swift */; };
+		66965C7A23558DF700267BC1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C7923558DF700267BC1 /* Theme.swift */; };
+		66965C7F23558F5C00267BC1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C7E23558F5C00267BC1 /* HomeViewController.swift */; };
+		66965C8123558F6100267BC1 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8023558F6100267BC1 /* HomeModel.swift */; };
+		66965C8323558F8800267BC1 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8223558F8800267BC1 /* AddViewController.swift */; };
+		66965C8523558F8E00267BC1 /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8423558F8E00267BC1 /* AddModel.swift */; };
+		66965C8723558FB000267BC1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8623558FB000267BC1 /* SettingsViewController.swift */; };
+		66965C8923558FB900267BC1 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8823558FB900267BC1 /* SettingsModel.swift */; };
+		66965C8B2355917400267BC1 /* ThemeMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66965C8A2355917400267BC1 /* ThemeMenuController.swift */; };
+		CF2974C6DA468D95593B4604 /* Pods_otpio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41862767F78C1A30F7490F18 /* Pods_otpio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41862767F78C1A30F7490F18 /* Pods_otpio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_otpio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66965C4C23558BB200267BC1 /* otpio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otpio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66965C4F23558BB200267BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66965C5123558BB200267BC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		66965C5323558BB200267BC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		66965C5523558BB300267BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		66965C5823558BB300267BC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66965C5B23558BB300267BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66965C5D23558BB300267BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66965C6823558C9D00267BC1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		66965C6A23558CA200267BC1 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		66965C6D23558CD800267BC1 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		66965C7023558CE200267BC1 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		66965C7323558D6A00267BC1 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		66965C7523558D7F00267BC1 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		66965C7723558D9F00267BC1 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		66965C7923558DF700267BC1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		66965C7E23558F5C00267BC1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		66965C8023558F6100267BC1 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		66965C8223558F8800267BC1 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		66965C8423558F8E00267BC1 /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
+		66965C8623558FB000267BC1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		66965C8823558FB900267BC1 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		66965C8A2355917400267BC1 /* ThemeMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeMenuController.swift; sourceTree = "<group>"; };
+		6CED8FC0524D1DB7F77A83A1 /* Pods-otpio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.release.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.release.xcconfig"; sourceTree = "<group>"; };
+		981E7A384F8F87AB6584F656 /* Pods-otpio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-otpio.debug.xcconfig"; path = "Target Support Files/Pods-otpio/Pods-otpio.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2974C6DA468D95593B4604 /* Pods_otpio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				66965C4E23558BB200267BC1 /* otpio */,
 				66965C4D23558BB200267BC1 /* Products */,
+				A162F6B9C066C7F06CDE1E5E /* Pods */,
+				ECB23BC9E7D90C2D8130B6F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,22 +88,131 @@
 			isa = PBXGroup;
 			children = (
 				66965C4F23558BB200267BC1 /* AppDelegate.swift */,
-				66965C5123558BB200267BC1 /* SceneDelegate.swift */,
-				66965C5323558BB200267BC1 /* ContentView.swift */,
-				66965C5523558BB300267BC1 /* Assets.xcassets */,
-				66965C5A23558BB300267BC1 /* LaunchScreen.storyboard */,
-				66965C5D23558BB300267BC1 /* Info.plist */,
-				66965C5723558BB300267BC1 /* Preview Content */,
+				66965C6623558C9400267BC1 /* Core */,
+				66965C6523558C8F00267BC1 /* Views */,
+				66965C6323558BC800267BC1 /* Resources */,
 			);
 			path = otpio;
 			sourceTree = "<group>";
 		};
-		66965C5723558BB300267BC1 /* Preview Content */ = {
+		66965C6323558BC800267BC1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66965C5823558BB300267BC1 /* Preview Assets.xcassets */,
+				66965C6423558C8300267BC1 /* Fonts */,
+				66965C5523558BB300267BC1 /* Assets.xcassets */,
+				66965C5A23558BB300267BC1 /* LaunchScreen.storyboard */,
+				66965C5D23558BB300267BC1 /* Info.plist */,
 			);
-			path = "Preview Content";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		66965C6423558C8300267BC1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		66965C6523558C8F00267BC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66965C7223558D6200267BC1 /* Menu */,
+				66965C7D23558F4B00267BC1 /* Home */,
+				66965C7C23558F4500267BC1 /* Add */,
+				66965C7B23558F3F00267BC1 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66965C6623558C9400267BC1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				66965C6F23558CDC00267BC1 /* Theming */,
+				66965C6C23558CD100267BC1 /* Bootstrap */,
+				66965C6723558C9800267BC1 /* Routing */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		66965C6723558C9800267BC1 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				66965C6823558C9D00267BC1 /* Router.swift */,
+				66965C6A23558CA200267BC1 /* Option.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		66965C6C23558CD100267BC1 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				66965C6D23558CD800267BC1 /* BaseController.swift */,
+				66965C7723558D9F00267BC1 /* BaseModel.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		66965C6F23558CDC00267BC1 /* Theming */ = {
+			isa = PBXGroup;
+			children = (
+				66965C7023558CE200267BC1 /* ThemeManager.swift */,
+				66965C7923558DF700267BC1 /* Theme.swift */,
+			);
+			path = Theming;
+			sourceTree = "<group>";
+		};
+		66965C7223558D6200267BC1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				66965C7323558D6A00267BC1 /* MenuController.swift */,
+				66965C7523558D7F00267BC1 /* MenuCell.swift */,
+				66965C8A2355917400267BC1 /* ThemeMenuController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		66965C7B23558F3F00267BC1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				66965C8623558FB000267BC1 /* SettingsViewController.swift */,
+				66965C8823558FB900267BC1 /* SettingsModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		66965C7C23558F4500267BC1 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				66965C8223558F8800267BC1 /* AddViewController.swift */,
+				66965C8423558F8E00267BC1 /* AddModel.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		66965C7D23558F4B00267BC1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				66965C7E23558F5C00267BC1 /* HomeViewController.swift */,
+				66965C8023558F6100267BC1 /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A162F6B9C066C7F06CDE1E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				981E7A384F8F87AB6584F656 /* Pods-otpio.debug.xcconfig */,
+				6CED8FC0524D1DB7F77A83A1 /* Pods-otpio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECB23BC9E7D90C2D8130B6F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41862767F78C1A30F7490F18 /* Pods_otpio.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66965C6023558BB300267BC1 /* Build configuration list for PBXNativeTarget "otpio" */;
 			buildPhases = (
+				C7A80679F607D39DE29B8AF1 /* [CP] Check Pods Manifest.lock */,
 				66965C4823558BB200267BC1 /* Sources */,
 				66965C4923558BB200267BC1 /* Frameworks */,
 				66965C4A23558BB200267BC1 /* Resources */,
+				9A5E41C9312EB7E5FC339720 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,21 +276,75 @@
 			buildActionMask = 2147483647;
 			files = (
 				66965C5C23558BB300267BC1 /* LaunchScreen.storyboard in Resources */,
-				66965C5923558BB300267BC1 /* Preview Assets.xcassets in Resources */,
 				66965C5623558BB300267BC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9A5E41C9312EB7E5FC339720 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-otpio/Pods-otpio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-otpio/Pods-otpio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-otpio/Pods-otpio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A80679F607D39DE29B8AF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-otpio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66965C4823558BB200267BC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66965C7A23558DF700267BC1 /* Theme.swift in Sources */,
+				66965C7623558D7F00267BC1 /* MenuCell.swift in Sources */,
+				66965C8B2355917400267BC1 /* ThemeMenuController.swift in Sources */,
+				66965C8323558F8800267BC1 /* AddViewController.swift in Sources */,
+				66965C8123558F6100267BC1 /* HomeModel.swift in Sources */,
+				66965C8523558F8E00267BC1 /* AddModel.swift in Sources */,
+				66965C6923558C9D00267BC1 /* Router.swift in Sources */,
+				66965C8923558FB900267BC1 /* SettingsModel.swift in Sources */,
+				66965C6B23558CA200267BC1 /* Option.swift in Sources */,
+				66965C7123558CE200267BC1 /* ThemeManager.swift in Sources */,
+				66965C7F23558F5C00267BC1 /* HomeViewController.swift in Sources */,
+				66965C8723558FB000267BC1 /* SettingsViewController.swift in Sources */,
+				66965C6E23558CD800267BC1 /* BaseController.swift in Sources */,
+				66965C7423558D6A00267BC1 /* MenuController.swift in Sources */,
+				66965C7823558D9F00267BC1 /* BaseModel.swift in Sources */,
 				66965C5023558BB200267BC1 /* AppDelegate.swift in Sources */,
-				66965C5223558BB200267BC1 /* SceneDelegate.swift in Sources */,
-				66965C5423558BB200267BC1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +478,14 @@
 		};
 		66965C6123558BB300267BC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981E7A384F8F87AB6584F656 /* Pods-otpio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"otpio/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6S4L29QT59;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = otpio/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/otpio/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,19 +493,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.matrixstudios.otpio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		66965C6223558BB300267BC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CED8FC0524D1DB7F77A83A1 /* Pods-otpio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"otpio/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 6S4L29QT59;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = otpio/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/otpio/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +514,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.matrixstudios.otpio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
