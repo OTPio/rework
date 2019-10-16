@@ -1,0 +1,28 @@
+# Night Light Dark
+
+nldPrimaryLabel: 0xedf1f2ff
+nldSecondaryLabel: 0x95a5a6ff
+nldIconColor: 0x3599dbff
+nldPrimaryBackground: 0x2b2b2bff
+nldSecondaryBackground: 0x262626ff
+nldTertiaryBackground: 0x7e8b8cff
+nldIconBackground: 0xeee8d5af
+nldNavbarBackground: 0x2b2b2b0f
+nldNavbarTitleColor: 0xbdc3c7ff
+nldNavbarBarButtonColor: 0x3599dbff
+nldProgressTrack: 0x268bd2ff
+
+# Night Light Bright
+
+nlbPrimaryLabel: 0x2b2b2bff
+nlbSecondaryLabel: 0x7e8b8cff
+nlbIconColor: 0x2b2b2bff
+nlbPrimaryBackground: 0xbdc3c7ff
+nlbSecondaryBackground: 0xedf1f2ff
+nlbTertiaryBackground: 0x7e8b8cff
+nlbIconBackground: 0xeee8d5af
+nlbNavbarBackground: 0xbdc3c70f
+nlbNavbarTitleColor: 0x2b2b2bff
+nlbNavbarBarButtonColor: 0x3599dbff
+nlbProgressTrack: 0x268bd2ff
+

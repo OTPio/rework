@@ -11,34 +11,34 @@ import UIKit
 // A standard black/white theme
 
 struct NightLightDark: ThemeType {
-    var primaryLabel        : UIColor = UIColor(0xedf1f2ff)
-    var secondaryLabel      : UIColor = UIColor(0x95a5a6ff)
-    var iconColor           : UIColor = UIColor(0x3599dbff)
+    var primaryLabel        : UIColor = ColorName.NightLight.nldPrimaryLabel.color
+    var secondaryLabel      : UIColor = ColorName.NightLight.nldSecondaryLabel.color
+    var iconColor           : UIColor = ColorName.NightLight.nldIconColor.color
     
-    var primaryBackground   : UIColor = UIColor(0x2b2b2bff)
-    var secondaryBackground : UIColor = UIColor(0x262626ff)
-    var tertiaryBackground  : UIColor = UIColor(0x7e8b8cff)
-    var iconBackground      : UIColor = UIColor(0xeee8d5af)
+    var primaryBackground   : UIColor = ColorName.NightLight.nldPrimaryBackground.color
+    var secondaryBackground : UIColor = ColorName.NightLight.nldSecondaryBackground.color
+    var tertiaryBackground  : UIColor = ColorName.NightLight.nldTertiaryBackground.color
+    var iconBackground      : UIColor = ColorName.NightLight.nldIconBackground.color
     
-    var navbarBackground    : UIColor = UIColor(0x2b2b2b0f)
-    var navbarTitleColor    : UIColor = UIColor(0xbdc3c7ff)
-    var navbarBarButtonColor: UIColor = UIColor(0x3599dbff)
+    var navbarBackground    : UIColor = ColorName.NightLight.nldNavbarBackground.color
+    var navbarTitleColor    : UIColor = ColorName.NightLight.nldNavbarTitleColor.color
+    var navbarBarButtonColor: UIColor = ColorName.NightLight.nldNavbarBarButtonColor.color
         
-    var progressTrack       : UIColor = UIColor(0x268bd2ff)
+    var progressTrack       : UIColor = ColorName.NightLight.nldProgressTrack.color
 }
 struct NightLightBright: ThemeType {
-    var primaryLabel        : UIColor = UIColor(0x2b2b2bff)
-    var secondaryLabel      : UIColor = UIColor(0x7e8b8cff)
-    var iconColor           : UIColor = UIColor(0x2b2b2bff)
+    var primaryLabel        : UIColor = ColorName.NightLight.nlbPrimaryLabel.color
+    var secondaryLabel      : UIColor = ColorName.NightLight.nlbSecondaryLabel.color
+    var iconColor           : UIColor = ColorName.NightLight.nlbIconColor.color
     
-    var primaryBackground   : UIColor = UIColor(0xbdc3c7ff)
-    var secondaryBackground : UIColor = UIColor(0xedf1f2ff)
-    var tertiaryBackground  : UIColor = UIColor(0x7e8b8cff)
-    var iconBackground      : UIColor = UIColor(0xeee8d5af)
+    var primaryBackground   : UIColor = ColorName.NightLight.nlbPrimaryBackground.color
+    var secondaryBackground : UIColor = ColorName.NightLight.nlbSecondaryBackground.color
+    var tertiaryBackground  : UIColor = ColorName.NightLight.nlbTertiaryBackground.color
+    var iconBackground      : UIColor = ColorName.NightLight.nlbIconBackground.color
     
-    var navbarBackground    : UIColor = UIColor(0xbdc3c70f)
-    var navbarTitleColor    : UIColor = UIColor(0x2b2b2bff)
-    var navbarBarButtonColor: UIColor = UIColor(0x3599dbff)
+    var navbarBackground    : UIColor = ColorName.NightLight.nlbNavbarBackground.color
+    var navbarTitleColor    : UIColor = ColorName.NightLight.nlbNavbarTitleColor.color
+    var navbarBarButtonColor: UIColor = ColorName.NightLight.nlbNavbarBarButtonColor.color
         
-    var progressTrack       : UIColor = UIColor(0x268bd2ff)
+    var progressTrack       : UIColor = ColorName.NightLight.nlbProgressTrack.color
 }

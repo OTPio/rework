@@ -1,0 +1,27 @@
+# In The Wind Dark
+
+iwdPrimaryLabel: 0xB9CDDAff
+iwdSecondaryLabel: 0x9DA2ABff
+iwdIconColor: 0x6B7FD7ff
+iwdPrimaryBackground: 0x153B50ff
+iwdSecondaryBackground: 0x1B4F6Bff
+iwdTertiaryBackground: 0x123142ff
+iwdIconBackground: 0xeee8d5af
+iwdNavbarBackground: 0x153B500f
+iwdNavbarTitleColor: 0xbdc3c7ff
+iwdNavbarBarButtonColor: 0x3599dbff
+iwdProgressTrack: 0x268bd2ff
+
+# In The Wind Light
+
+iwlPrimaryLabel: 0xF7F9F9ff
+iwlSecondaryLabel: 0xB4B6B6ff
+iwlIconColor: 0x3599dbff
+iwlPrimaryBackground: 0x1768ACff
+iwlSecondaryBackground: 0x1768ACff
+iwlTertiaryBackground: 0x2C75B3ff
+iwlIconBackground: 0xeee8d5af
+iwlNavbarBackground: 0x1768AC0f
+iwlNavbarTitleColor: 0xbdc3c7ff
+iwlNavbarBarButtonColor: 0xCFE2DFff
+iwlProgressTrack: 0x268bd2ff

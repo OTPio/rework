@@ -1,0 +1,27 @@
+# Night Light Bright
+
+sldPrimaryLabel: 0x93a1a1ff
+sldSecondaryLabel: 0x657b83bf
+sldIconColor: 0xd33682ff
+sldPrimaryBackground: 0x002b36ff
+sldSecondaryBackground: 0x073642ff
+sldTertiaryBackground: 0x586e75ff
+sldIconBackground: 0xeee8d5af
+sldNavbarBackground: 0x002b360f
+sldNavbarTitleColor: 0x268bd2ff
+sldNavbarBarButtonColor: 0x6c71c4ff
+sldProgressTrack: 0x268bd2ff
+
+# Night Light Bright
+
+sllPrimaryLabel: 0x586e75ff
+sllSecondaryLabel: 0x657b83bf
+sllIconColor: 0xd33682ff
+sllPrimaryBackground: 0xfdf6e3ff
+sllSecondaryBackground: 0xeee8d5ff
+sllTertiaryBackground: 0x93a1a1ff
+sllIconBackground: 0xeee8d5af
+sllNavbarBackground: 0xfdf6e30f
+sllNavbarTitleColor: 0x268bd2ff
+sllNavbarBarButtonColor: 0x6c71c4ff
+sllProgressTrack: 0x268bd2ff

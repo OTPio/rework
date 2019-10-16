@@ -11,34 +11,34 @@ import UIKit
 // A blueish tint color
 
 struct InTheWindDark: ThemeType {
-    var primaryLabel        : UIColor = UIColor(0xB9CDDAff)
-    var secondaryLabel      : UIColor = UIColor(0x9DA2ABff)
-    var iconColor           : UIColor = UIColor(0x6B7FD7ff)
+    var primaryLabel        : UIColor = ColorName.InTheWind.iwdPrimaryLabel.color
+    var secondaryLabel      : UIColor = ColorName.InTheWind.iwdSecondaryLabel.color
+    var iconColor           : UIColor = ColorName.InTheWind.iwdIconColor.color
     
-    var primaryBackground   : UIColor = UIColor(0x153B50ff)
-    var secondaryBackground : UIColor = UIColor(0x1B4F6Bff)
-    var tertiaryBackground  : UIColor = UIColor(0x123142ff)
-    var iconBackground      : UIColor = UIColor(0xeee8d5af)
+    var primaryBackground   : UIColor = ColorName.InTheWind.iwdPrimaryBackground.color
+    var secondaryBackground : UIColor = ColorName.InTheWind.iwdSecondaryBackground.color
+    var tertiaryBackground  : UIColor = ColorName.InTheWind.iwdTertiaryBackground.color
+    var iconBackground      : UIColor = ColorName.InTheWind.iwdIconBackground.color
     
-    var navbarBackground    : UIColor = UIColor(0x153B500f)
-    var navbarTitleColor    : UIColor = UIColor(0xbdc3c7ff)
-    var navbarBarButtonColor: UIColor = UIColor(0x3599dbff)
+    var navbarBackground    : UIColor = ColorName.InTheWind.iwdNavbarBackground.color
+    var navbarTitleColor    : UIColor = ColorName.InTheWind.iwdNavbarTitleColor.color
+    var navbarBarButtonColor: UIColor = ColorName.InTheWind.iwdNavbarBarButtonColor.color
         
-    var progressTrack       : UIColor = UIColor(0x268bd2ff)
+    var progressTrack       : UIColor = ColorName.InTheWind.iwdProgressTrack.color
 }
 struct InTheWindLight: ThemeType {
-    var primaryLabel        : UIColor = UIColor(0xF7F9F9ff)
-    var secondaryLabel      : UIColor = UIColor(0xB4B6B6ff)
-    var iconColor           : UIColor = UIColor(0x3599dbff)
+    var primaryLabel        : UIColor = ColorName.InTheWind.iwlPrimaryLabel.color
+    var secondaryLabel      : UIColor = ColorName.InTheWind.iwlSecondaryLabel.color
+    var iconColor           : UIColor = ColorName.InTheWind.iwlIconColor.color
     
-    var primaryBackground   : UIColor = UIColor(0x1768ACff)
-    var secondaryBackground : UIColor = UIColor(0x4183BBff)
-    var tertiaryBackground  : UIColor = UIColor(0x2C75B3ff)
-    var iconBackground      : UIColor = UIColor(0xeee8d5af)
+    var primaryBackground   : UIColor = ColorName.InTheWind.iwlPrimaryBackground.color
+    var secondaryBackground : UIColor = ColorName.InTheWind.iwlSecondaryBackground.color
+    var tertiaryBackground  : UIColor = ColorName.InTheWind.iwlTertiaryBackground.color
+    var iconBackground      : UIColor = ColorName.InTheWind.iwlIconBackground.color
     
-    var navbarBackground    : UIColor = UIColor(0x1768AC0f)
-    var navbarTitleColor    : UIColor = UIColor(0xbdc3c7ff)
-    var navbarBarButtonColor: UIColor = UIColor(0xCFE2DFff)
+    var navbarBackground    : UIColor = ColorName.InTheWind.iwlNavbarBackground.color
+    var navbarTitleColor    : UIColor = ColorName.InTheWind.iwlNavbarTitleColor.color
+    var navbarBarButtonColor: UIColor = ColorName.InTheWind.iwlNavbarBarButtonColor.color
         
-    var progressTrack       : UIColor = UIColor(0x268bd2ff)
+    var progressTrack       : UIColor = ColorName.InTheWind.iwlProgressTrack.color
 }

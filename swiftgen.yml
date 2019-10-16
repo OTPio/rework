@@ -1,0 +1,10 @@
+input_dir: ./Resources
+output_dir: ./otpio/Resources
+colors:
+    inputs:
+      - Colors/InTheWind.txt
+      - Colors/Solarized.txt
+      - Colors/NightLight.txt
+    outputs:
+      templateName: swift4
+      output: Colors.swift

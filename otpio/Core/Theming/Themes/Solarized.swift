@@ -9,34 +9,34 @@
 import UIKit
 
 struct SolarizedDark: ThemeType {
-    var primaryLabel        : UIColor = UIColor(0x93a1a1ff)
-    var secondaryLabel      : UIColor = UIColor(0x657b83bf)
-    var iconColor           : UIColor = UIColor(0xd33682ff)
+    var primaryLabel        : UIColor = ColorName.Solarized.sldPrimaryLabel.color
+    var secondaryLabel      : UIColor = ColorName.Solarized.sldSecondaryLabel.color
+    var iconColor           : UIColor = ColorName.Solarized.sldIconColor.color
     
-    var primaryBackground   : UIColor = UIColor(0x002b36ff)
-    var secondaryBackground : UIColor = UIColor(0x073642ff)
-    var tertiaryBackground  : UIColor = UIColor(0x586e75ff)
-    var iconBackground      : UIColor = UIColor(0xeee8d5af)
+    var primaryBackground   : UIColor = ColorName.Solarized.sldPrimaryBackground.color
+    var secondaryBackground : UIColor = ColorName.Solarized.sldSecondaryBackground.color
+    var tertiaryBackground  : UIColor = ColorName.Solarized.sldTertiaryBackground.color
+    var iconBackground      : UIColor = ColorName.Solarized.sldIconBackground.color
     
-    var navbarBackground    : UIColor = UIColor(0x002b360f)
-    var navbarTitleColor    : UIColor = UIColor(0x268bd2ff)
-    var navbarBarButtonColor: UIColor = UIColor(0x6c71c4ff)
+    var navbarBackground    : UIColor = ColorName.Solarized.sldNavbarBackground.color
+    var navbarTitleColor    : UIColor = ColorName.Solarized.sldNavbarTitleColor.color
+    var navbarBarButtonColor: UIColor = ColorName.Solarized.sldNavbarBarButtonColor.color
         
-    var progressTrack       : UIColor = UIColor(0x268bd2ff)
+    var progressTrack       : UIColor = ColorName.Solarized.sldProgressTrack.color
 }
 struct SolarizedLight: ThemeType {
-    var primaryLabel        : UIColor = UIColor(0x586e75ff)
-    var secondaryLabel      : UIColor = UIColor(0x657b83bf)
-    var iconColor           : UIColor = UIColor(0xd33682ff)
+    var primaryLabel        : UIColor = ColorName.Solarized.sllPrimaryLabel.color
+    var secondaryLabel      : UIColor = ColorName.Solarized.sllSecondaryLabel.color
+    var iconColor           : UIColor = ColorName.Solarized.sllIconColor.color
     
-    var primaryBackground   : UIColor = UIColor(0xfdf6e3ff)
-    var secondaryBackground : UIColor = UIColor(0xeee8d5ff)
-    var tertiaryBackground  : UIColor = UIColor(0x93a1a1ff)
-    var iconBackground      : UIColor = UIColor(0xeee8d5af)
+    var primaryBackground   : UIColor = ColorName.Solarized.sllPrimaryBackground.color
+    var secondaryBackground : UIColor = ColorName.Solarized.sllSecondaryBackground.color
+    var tertiaryBackground  : UIColor = ColorName.Solarized.sllTertiaryBackground.color
+    var iconBackground      : UIColor = ColorName.Solarized.sllIconBackground.color
     
-    var navbarBackground    : UIColor = UIColor(0xfdf6e30f)
-    var navbarTitleColor    : UIColor = UIColor(0x268bd2ff)
-    var navbarBarButtonColor: UIColor = UIColor(0x6c71c4ff)
+    var navbarBackground    : UIColor = ColorName.Solarized.sllNavbarBackground.color
+    var navbarTitleColor    : UIColor = ColorName.Solarized.sllNavbarTitleColor.color
+    var navbarBarButtonColor: UIColor = ColorName.Solarized.sllNavbarBarButtonColor.color
         
-    var progressTrack       : UIColor = UIColor(0x268bd2ff)
+    var progressTrack       : UIColor = ColorName.Solarized.sllProgressTrack.color
 }
